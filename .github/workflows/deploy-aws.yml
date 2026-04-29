@@ -24,7 +24,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }} /ms.productos:1.0
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ms.productos:1.0
 
       - name: Desplegar imagen en AWS
         uses: appleboy/ssh-action@v1.0.3
